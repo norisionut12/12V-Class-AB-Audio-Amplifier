@@ -78,8 +78,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 
 ```text
 ├── Docs/
-│   ├── Project_Documentation_Buta_Noris.pdf  # Comprehensive engineering report (Romanian)
-│   └── Print Schematic.pdf                   # High-resolution vector schematic printout
+│   ├── Documentatie_Romana.pdf  # Comprehensive engineering report (Romanian)   
 ├── Fabrication_Gerbers/
 │   └── gerber_files_final.zip                # Complete Gerber and Excellon drill production files
 ├── Images/                                   # High-resolution schematic captures, renders, and photos
