@@ -165,7 +165,7 @@ Driven with a $10\text{ mV}$ peak sine wave at $1\text{ kHz}$ directly at the in
 | ![Transient Full](Images/Screenshot%202026-10-15%20222015.png) | ![Transient Zoom](Images/Screenshot%202026-10-15%20222034.png) |
 
 #### AC Frequency Respons (Bode Plot)
-![Bode Plot](Images/Screenshot%202026-10-15%20221706.png)
+![Bode Plot](Images/Screenshot%202026-10-16%20012844.png)
 ---
 
 ## 4. Safe Operating Area (SOA) Verification
