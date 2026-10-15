@@ -9,7 +9,7 @@
 
 The KiCad schematic is organized into 6 visual boxes representing **7 distinct functional blocks** (the main "Amplificator audio" box houses both the Voltage Amplifier Stage and the Class AB Output Stage).
 
-![System Architecture](Images/schematic.png)
+![System Architecture](Images/Screenshot%202026-10-15%20193117.png)
 
 | Block | Components | Function | Engineering Justification |
 | :--- | :--- | :--- | :--- |
@@ -162,8 +162,10 @@ Driven with a $10\text{ mV}$ peak sine wave at $1\text{ kHz}$ directly at the in
 
 | Transient Output (`0–400 ms`) | Steady-State Sine Wave (`380–400 ms`) |
 | :---: | :---: |
-| ![Transient Full](Images/sim_transient_full.png) | ![Transient Zoom](Images/sim_ac_bode.png) |
+| ![Transient Full](Images/Screenshot%202026-10-15%20222015.png) | ![Transient Zoom](Images/Screenshot%202026-10-15%20222034.png) |
 
+#### AC Frequency Respons (Bode Plot)
+![Bode Plot](Images/Screenshot%202026-10-15%20221706.png)
 ---
 
 ## 4. Safe Operating Area (SOA) Verification
