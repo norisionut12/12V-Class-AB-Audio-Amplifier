@@ -158,7 +158,7 @@ In the unloaded `.op` simulation, $I_C(Q_1) = 7\text{ pA}$, so `Q1`'s base-emitt
 ### 3.2 Amplifier Transient (`.tran`) and AC Sweep (`.ac`)
 Driven with a $10\text{ mV}$ peak sine wave at $1\text{ kHz}$ directly at the input coupling capacitor:
 * **Transient Response (`0–400 ms` & `380–400 ms`):** The output across the $8\text{ }\Omega$ load stabilizes into a clean waveform swinging between $+0.40\text{ V}$ and $-0.55\text{ V}$ (asymmetry is normal for a single-ended VAS pull-up resistor $R_7$, which clips the positive half-cycle earlier at $+1.35\text{ V}$ vs. $-4.10\text{ V}$ on the negative excursion).
-* **AC Frequency Response (`.ac`):** Demonstrates a mid-band gain of $\approx 19.5\text{ dB}$ in the simplified test schematic (and $32.1\text{ dB}$ / $40\times$ in the full circuit configuration), with a phase of $-160^\circ$ at $1\text{ kHz}$ and a $-3\text{ dB}$ passband from $301\text{ Hz}$ to $31\text{ kHz}$.
+* **AC Frequency Response (`.ac`):** Demonstrates a mid-band gain of $\approx 34\text{ dB}$ in the test schematic (and $32.1\text{ dB}$ / $40\times$ in the full circuit configuration), with a phase of $-160^\circ$ at $1\text{ kHz}$ and a $-3\text{ dB}$ passband from $362\text{ Hz}$ to $62\text{ kHz}$.
 
 | Transient Output (`0–400 ms`) | Steady-State Sine Wave (`380–400 ms`) |
 | :---: | :---: |
