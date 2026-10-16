@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository contains the complete hardware design, mathematical analysis, SPICE simulation validation, and physical prototype implementation of a **discrete 12V single-supply Class AB audio amplifier** with an integrated **RC anti-thump speaker protection circuit** and **linear voltage regulator**.
+This repository contains the complete hardware design, mathematical analysis, SPICE simulation validation, and physical prototype implementation of a **discrete 12V single-supply Class AB audio amplifier** with an integrated **speaker protection circuit** and **linear voltage regulator**.
 
 Designed entirely without integrated circuits (utilizing 5 discrete bipolar junction transistors), the amplifier processes a stereo line-level input from a laptop, PC, or smartphone, sums it into a mono signal, and drives an $8\text{ }\Omega$ speaker from a standard $12\text{ V}$ DC power adapter. Because a single-rail supply biases the push-pull output stage at approximately half the supply rail ($6.76\text{ V}$ DC), a large $1000\text{ }\mu\text{F}$ output coupling capacitor is required. At power-up, charging this capacitor produces a severe transient spike ($11.6\text{ V}$ peak at $6.8\text{ ms}$). To protect the speaker voice coil and eliminate the audible turn-on "thump", an on-board RC delay circuit holds the speaker disconnected via an external relay for $\approx 0.27\text{ s}$ until the circuit settles into its DC quiescent operating point.
 
@@ -30,7 +30,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 * **Output Zobel (Boucherot) Network:** $10\text{ }\Omega + 100\text{ nF}$ series network ($f_{Zobel} = 159\text{ kHz}$) ensuring unconditional stability when driving inductive loudspeaker loads.
 * **Dedicated On-Board Linear Regulator:** Zener-referenced (`5V1` + `TIP31C`) emitter-follower regulator stepping down $12\text{ V}$ to $4.33\text{ V}$ under load to safely power the external $5\text{ V}$ relay module.
 * **Active Anti-Thump Speaker Protection:** RC timing network ($\tau = 4.7\text{ s}$) driving an open-collector `2N2222` stage that delays relay actuation by $\approx 266\text{ ms}$ at power-up.
-* **Custom 2-Layer THT PCB:** Manufactured with blue soldermask, wide power traces, dual-layer ground planes (hatched bottom plane), and full component value silkscreen.
+* **Custom 2-Layer THT PCB:** Manufactured with blue soldermask, wide power traces,ground plane (hatched bottom plane), and full component value silkscreen.
 
 ---
 
@@ -59,7 +59,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 </p>
 
 ### 2D PCB Layout & 3D Visualizations
-| 2D PCB Routing (Front & Back) | 3D Rendered Top View |
+| 2D PCB Routing (Front) | 3D Rendered Top View |
 | :---: | :---: |
 | <img src="Images/Screenshot%202026-10-15%20193328.png" width="450"> | <img src="Images/Screenshot%202026-10-15%20193354.png" width="450"> |
 
@@ -80,8 +80,8 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 ├── Docs/
 │   ├── Documentatie_Romana.docx  # Comprehensive engineering report (Romanian)   
 ├── Fabrication_Gerbers/
-│   └── gerber_files_final.zip                # Complete Gerber and Excellon drill production files
-├── Images/                                   # High-resolution schematic captures, renders, and photos
+│   └── gerber_files_final.zip                # Complete Gerber drill production files
+├── Images/                                   # Schematic captures, renders, and photos
 ├── KiCad_Design_Files/
 │   ├── final.kicad_pro                       # KiCad 10.0 project file
 │   ├── final.kicad_sch                       # KiCad schematic sheet
@@ -94,7 +94,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 ├── LICENSE                                   # MIT Open-Source License
 ├── README.md                                 # Main project showcase and technical summary
 ├── bill_of_materials.md                     # Categorized component table (BOM)
-└── hardware_design_documentation.md          # Theoretical circuit derivations, SOA & simulation data
+└── hardware_design_documentation.md          # Theoretical circuit simulation data
 ```
 
 ---
