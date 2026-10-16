@@ -63,7 +63,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 | :---: | :---: |
 | <img src="Images/Screenshot%202026-10-15%20193328.png" width="450"> | <img src="Images/Screenshot%202026-10-15%20193354.png" width="450"> |
 
-| 2D PCB Traces & Vias | 3D Rendered Bottom View ("BUTA NORIS") |
+| 2D PCB Traces | 3D Rendered Bottom View ("BUTA NORIS") |
 | :---: | :---: |
 | <img src="Images/Screenshot%202026-10-15%20193342.png" width="450"> | <img src="Images/Screenshot%202026-10-15%20193403.png" width="450"> |
 
@@ -78,7 +78,7 @@ Designed entirely without integrated circuits (utilizing 5 discrete bipolar junc
 
 ```text
 ├── Docs/
-│   ├── Documentatie_Romana.pdf  # Comprehensive engineering report (Romanian)   
+│   ├── Documentatie_Romana.docx  # Comprehensive engineering report (Romanian)   
 ├── Fabrication_Gerbers/
 │   └── gerber_files_final.zip                # Complete Gerber and Excellon drill production files
 ├── Images/                                   # High-resolution schematic captures, renders, and photos
